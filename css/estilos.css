@@ -42,11 +42,10 @@ h1 {
     text-align: center;
     text-transform: uppercase;
     font-size: 4rem;
-    font-weight: 700;
     line-height: 1;
     border: 2px solid var(--border);
     padding: 2rem;
-    max-width: 550px;
+    max-width: 100%;
     margin: 0 auto 10px;
     background-image: url('../imagens/Signos.png');
 }
@@ -60,13 +59,15 @@ p {
     text-align: left;
     font-size: xx-large;
     font-weight: 700;
-    line-height: 1;
-    padding: 16rem;
+    line-height: 1px;
+    
+    
 }
 
 .div-resultado {
-    height: 500px;
+    
     display: flex;
+    flex-direction: column;
     align-items: center;
     justify-content: center;
 }
@@ -74,3 +75,20 @@ p {
 .esconde {
     display: none;
 }
+@media (min-width: 370px) {
+    h1 {
+        font-size: 4rem;
+    }
+    p {
+        font-size: 1.5rem;
+    }
+}
+@media (max-width: 370px) {
+    h1 {
+        font-size: 2rem;
+    }
+    p {
+        font-size: 1rem;
+    }
+}
+
