@@ -1,0 +1,76 @@
+:root {
+    --fundo: #FFF;
+    --titulos: rgb(170, 170, 170);
+    --paragrafos: #000000;
+    --elemento: #ffffff;
+    --border: rgb(0, 0, 0);
+}
+
+.modoEscuro:root {
+    --fundo: #111;
+    --titulos: #FFF;
+    --paragrafos: #ffffff;
+    --elemento: #000000;
+    --border: white;
+}
+
+* {
+
+    font-family: 'Open Sans', sans-serif;
+}
+
+body {
+    font-family: system-ui;
+    background: var(--fundo);
+    color: var(--titulos);
+    text-align: end;
+    transition: all 1s ease;
+}
+
+button {
+    background-color: var(--elemento);
+    color: var(--border);
+    outline: none;
+    border: 2px solid;
+    padding: 0px 5px;
+    font-weight: 900;
+    cursor: pointer;
+    border-radius: 8px;
+}
+
+h1 {
+    text-align: center;
+    text-transform: uppercase;
+    font-size: 4rem;
+    font-weight: 700;
+    line-height: 1;
+    border: 2px solid var(--border);
+    padding: 2rem;
+    max-width: 550px;
+    margin: 0 auto 10px;
+    background-image: url('../imagens/Signos.png');
+}
+
+p {
+    text-align: center;
+    color: var(--paragrafos)
+}
+
+.resultado {
+    text-align: left;
+    font-size: xx-large;
+    font-weight: 700;
+    line-height: 1;
+    padding: 16rem;
+}
+
+.div-resultado {
+    height: 500px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+
+.esconde {
+    display: none;
+}

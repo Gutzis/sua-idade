@@ -1,0 +1,41 @@
+<!DOCTYPE html>
+<html lang="pt-BR">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="./css/estilos.css">
+    <title>Projeto</title>
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Open+Sans&display=swap" rel="stylesheet">
+
+</head>
+
+<body>
+    <button id="modoEscuro">Modo escuro</button>
+    <h1>Projeto Integrado</h1>
+    <p>Nesse <strong> projeto </strong> venho mostrar um site que automáticamente mostrará sua idade e seu signo, então
+        vamos nessa:</p>
+
+    <p>Data de Nascimento:</p>
+    <form action="">
+
+        <p> <input class="dataNascimento" type="date" name="data"></p>
+        <p> <input type="button" value="Enviar" onclick="enviar()">
+            <input type="reset" value="Limpar" onclick="limpar()">
+        </p>
+        
+        <div class="div-resultado">
+            <p class="resultado"></p>
+            <img class="imagem esconde" src="" alt="">
+        </div>
+        <p class="resultado"></p>
+    </form>
+    <script src="./js/aplicacao.js"></script>
+
+</body>
+
+
+</html>
